@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" type="text/css" href="static/css/home.css">
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+ <div class="mainheader">
+  <div >
+    <a class="logo">SQUAD</a>
+   
+  </div>
+
+  <nav>
+    <a href="{{ url_for('home') }}">HOME</a>
+    <a href="{{ url_for('form1') }}">Prediction</a>
+    
+    <a href="{{ url_for('contact') }}">Contact</a>
+  
+  </nav>
+
+  <div class="menubtn">
+   <button> <a href="{{ url_for('logout') }}">LOG OUT</a></button>
+   
+  </div>
+ </div>
+
+<!--   DONATION FOR SUPPORT:    PhonePay = vinodbahadur@ybl      GooglePay: vbthapa55@oksbi
+ Believe me, all this money will be used to make more quality videos and to make my channel grow. So that I can always provide you awesome free videos :) -->
+
+ <main>
+  <section class="left-sec">
+   <h1> flight Delay Prediction</h1>
+   <h2>using data science</h2><br><br>
+   <nav>
+   <button ><a href="https://dl.acm.org/doi/fullHtml/10.1145/3497701.3497725"> learn more</a></button></nav>
+  </section>
+
+  <!-- <section class="right-sec">
+   <figure>
+    <img src="/static/img/home.jfif">
+   </figure>
+  </section> -->
+ </main>
+</header>
+</body>
+</html>
