@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="static/css/form1.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="main">
+
+        <div class="navbar">
+            <header>
+                <h2><a href="#" class="logo">SQUAD</a></h2>
+                <div class="navigation">
+                  <a href="{{ url_for('home') }}">HOME</a>
+          <a href="{{ url_for('form1') }}">Prediction</a>
+          
+          <a href="{{ url_for('contact') }}">Contact</a>
+          
+                </div>
+              </header>
+        </div>
+
+        <div class="form11">
+
+            <div class="container">
+
+                <div class="title">Details</div>
+                <div class="content">
+                  <form action="{{ url_for('predict1') }}" method="POST">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">MONTH</span>
+                            <input type="text" placeholder="Enter here" name="month" required>
+                          </div>
+                          <div class="input-box">
+                            <span class="details">DATE</span>
+                            <input type="text" placeholder="Enter here" name="date" required>
+                          </div>
+                          
+                      <div class="input-box">
+                        <span class="details">Flight_No</span>
+                        <input type="text" placeholder="Enter here" name="Flight_No" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">ORGIN_AIRPORT_ID</span>
+                        <input type="text" placeholder="Enter here"  name="origin_airport_id" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">DEST_AIRPORT_ID</span>
+                        <input type="text" placeholder="Enter here" name="dest_airport_id" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">CRS_Dep_Time</span>
+                        <input type="text" placeholder="Enter here" name="crs_dep_time" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">CRS_Arr_TIME</span>
+                        <input type="text" placeholder="Enter here"name="crs_arr_time" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Dep_TIME</span>
+                        <input type="text" placeholder="Enter here"name="dep_time" required>
+                      </div>
+                    </div>
+                   
+                      
+                    <div class="button">
+                      <input type="submit" value="PREDICT">
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+        </div>
+
+    </div>
+    
+  
+
+</body>
+</html>
